@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+u<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -21,6 +21,17 @@
     <title>WebStudio</title>
   </head>
   <body>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-booking">
+        <button class="modal-button" data-modal-close type="button">
+          <svg class="modal-button-svg" width="8" height="8">
+            <use
+              href="./images/close-modal.svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <!-- Header -->
     <header class="hero-header navbar-backround">
       <div class="navbar-align container">
@@ -71,7 +82,11 @@
           <h1 class="hero-font hero-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="order-service-button service-button" type="button">
+          <button
+            data-modal-open
+            class="order-service-button service-button"
+            type="button"
+          >
             Order Service
           </button>
         </div>
@@ -452,5 +467,6 @@
         </div>
       </div>
     </footer>
+    <script src="modal.js"></script>
   </body>
 </html>
