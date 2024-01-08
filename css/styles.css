@@ -80,7 +80,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-pf-transition {
   position: absolute;
-  top: ;
+  top: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -246,6 +246,18 @@ gap: 40px;
   letter-spacing: 0.02em;
   list-style: none;
   border-color: var(--border-white);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.nav-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover, 
 .nav-link:focus {
@@ -267,6 +279,8 @@ gap: 40px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .address-style {
   font-style: normal;
@@ -320,6 +334,7 @@ gap: 40px;
     border: none;
     border-radius: 4px;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
 .order-service-button:hover,
@@ -352,6 +367,7 @@ gap: 40px;
  width: calc((100%-3*24px)/4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-team-div{
   padding-top: 32px;
@@ -398,6 +414,7 @@ gap: 40px;
   align-items: center;
   display: flex;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-decoration-footer:hover,
 .social-media-decoration-footer:focus{
@@ -444,6 +461,7 @@ gap: 40px;
   display: flex;
   justify-content: center;
   color: var(--logo-border);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-links:hover,
 .logo-links:focus{
@@ -498,6 +516,10 @@ padding-bottom: 120px;
   padding-right: 24px;
   border: 1px solid var(--navbar-backround);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-cards{
 display: flex;
